@@ -6,7 +6,7 @@
     
 }
 body{
-     background-color: black;
+   background-color: black;
 }
 h1{
     color: white;
@@ -71,4 +71,13 @@ h1{
     border-radius: 5px;
     cursor: pointer;
 
+}
+ul{
+    text-align: center;
+
+}
+li{
+    
+    font-size: 1.2em;
+    list-style: none;
 }
