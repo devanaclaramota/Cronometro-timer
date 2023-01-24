@@ -3,7 +3,7 @@ let seconds = 00
 let minutes = 00
 let hour = 00
 let interval 
-
+let click = false
 
 function counter(){
     seconds++
@@ -27,17 +27,19 @@ function menor10(num){
     }
 }
 function start(){
-    counter()
-  interval = setInterval(counter,1000)
-
-  
+    if(!click){
+        counter()
+        interval = setInterval(counter,1000)
+        click = true
+    } else{
+        alert('Cronometro em andamento')
+    }
 }
 
 function pause(){
     clearInterval(interval)
-   let li = document.querySelector("li")
-   li.innerHTML = (`${display} aqui`)
-    
+    click = false
+
 }
 function reset(){
     clearInterval(interval)
@@ -45,4 +47,5 @@ function reset(){
     minutes = 00
     hour = 00
     display.innerText = '00:00:00'
+    click = false
 }

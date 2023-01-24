@@ -17,28 +17,29 @@ h1{
     background-color: rgb(26, 26, 26);
     margin: auto;
     padding: 40px;
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     color: white;
 }
 .timer p{
     font-size: 3.3em;
     text-align: center;
-    padding: 40px;
    
 }
 .display{
-    width: 500px;
-    height: 200px;
-    
-    margin: auto;
+  
+    margin-top: 20px;
     
    
     
 }
 .btn{
-    padding: 60px;
-    text-align: center;
+    display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: -10px;
+
 
 }
 .play{
@@ -71,13 +72,4 @@ h1{
     border-radius: 5px;
     cursor: pointer;
 
-}
-ul{
-    text-align: center;
-
-}
-li{
-    
-    font-size: 1.2em;
-    list-style: none;
 }
